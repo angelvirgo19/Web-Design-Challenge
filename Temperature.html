@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us" class = "html">
+
+<head>
+    <style>
+        img{ width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Max Temperature</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="wokring.css">
+    
+</head>
+
+<body>
+    <div class="body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light topnav">
+            <a class="navbar-brand div1" href="index.html">Latitude Analysis</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Latitude Analysis <span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a target= "__blank" href="Temperature.html" class="dropdown-item" >Max Temperature</a>
+                            <a target= "__blank" href="Humidity.html" class="dropdown-item" >Humidity</a>
+                            <a target= "__blank" href="Cloudiness.html" class="dropdown-item" >Cloudiness</a>
+                            <a target= "__blank" href="Wind-Speed.html" class="dropdown-item" >Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" target= "__blank" href="Comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" target= "__blank" href="cities.html">Data</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row maincontainer">
+            <div class="col-lg-8 col-md-12">
+                <div class="container1">
+                    <header>
+                        <h2 class="h2header">Max Temperature</h2>
+                    </header>
+                    <!-- <div class="col-sm-4 col-md-6">
+                        <div class="border"> -->
+                            <a target= "__blank" href="Temperature.html">
+                                <figure >
+                                    <img class="mainfigure" src="City Latitude vs Max Temperature.png" alt="City Latitude vs Max Temperature" >
+                                </figure>
+                            </a>
+                            <p class="parastyle">The above plot analyzes the relationship between the City Latitude and Temperatures in degree Farhenheit at those latitudes. As we see the Temperature seems to be higher near the equator (0 degree) and reduces past that (-20 farhenheit at 70 degree). Based on our analysis, we can conclude that temperature in Cities near the Equator is higher compared with Cities located farther.</p>
+                        <!-- </div>  
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="container2">
+                    <h4 class="h4header">Visualizations</h4>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-3">
+                            <div class="border">
+                                <a target= "__blank" href="Temperature.html">
+                                    <figure class="comparison_figure">
+                                        <figcaption class="figcaption">Latitude vs. Max Temperature</figcaption>
+                                        <img src="City Latitude vs Max Temperature.png" alt="City Latitude vs Max Temperature" >
+                                    </figure>
+                                </a>
+                            </div>  
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12 col-3">
+                            <div class="border">
+                            <a target= "__blank" href="Humidity.html">
+                                    <figure class="comparison_figure";>
+                                        <figcaption class="figcaption">Latitude vs. Humidity</figcaption>
+                                        <img src="City Latitude vs Humidity.png" alt="City Latitude vs Humidity" >
+                                        
+                                    </figure>
+                                </a>
+                            </div>                        
+                        </div>
+                
+                        <div class="col-md-6 col-sm-12 col-3">
+                            <div class="border">
+                            <a target= "__blank" href="Cloudiness.html">
+                                    <figure class="comparison_figure_bottom">
+                                        <figcaption class="figcaption">Latitude vs. Cloudiness</figcaption>
+                                        <img src="City Latitude vs Cloudiness.png" alt="City Latitude vs Cloudiness" >
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-3">
+                            <div class="border">
+                                <a target= "__blank" href="Wind-Speed.html">
+                                    <figure class="comparison_figure_bottom" >
+                                        <figcaption class="figcaption">Latitude vs. Wind Speed</figcaption>
+                                        <img src="City Latitude vs Wind Speed.png" alt="City Latitude vs Wind Speed" >
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+    <footer id="footer">
+        © Data Analysis and Visualization BootCamp 2020 - NBaxi
+    </footer>
+
+</html>
